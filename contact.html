@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak — StudyMate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><nav class="nav container">
+  <a class="brand" href="index.html"><span class="brand-mark">S</span> StudyMate<span class="brand-dot">.</span></a>
+  <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <div class="nav-links"><a href="index.html">Beranda</a><a href="find.html">Cari Partner</a><a href="dashboard.html">Dashboard</a><a href="about.html">Tentang</a><a class="active" href="contact.html">Kontak</a></div>
+  <button class="theme-toggle" type="button" aria-label="Ganti tema">☾</button>
+</nav></header>
+<main class="container page-main">
+  <section class="page-intro"><span class="eyebrow">SAPA KAMI</span><h1>Ada ide atau <span class="gradient-text">pertanyaan?</span></h1><p>Kirim pesan melalui formulir berikut. Formulir ini merupakan simulasi validasi di sisi browser.</p></section>
+  <section class="contact-layout">
+    <div class="contact-info"><div class="contact-icon">✉️</div><h2>Yuk, ngobrol!</h2><p>Punya saran untuk StudyMate? Kami senang mendengar ide darimu.</p><div class="contact-detail"><span>📚</span><div><b>Fokus</b><small>Komunitas belajar siswa</small></div></div><div class="contact-detail"><span>💻</span><div><b>Proyek</b><small>Mini Web Deployment</small></div></div></div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row"><label for="name">Nama lengkap</label><input id="name" name="name" type="text" placeholder="Nama kamu" required minlength="3"><small class="field-error" id="nameError"></small></div>
+      <div class="form-row"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="nama@email.com" required><small class="field-error" id="emailError"></small></div>
+      <div class="form-row"><label for="message">Pesan</label><textarea id="message" name="message" rows="4" placeholder="Tulis pesanmu di sini..." required minlength="10"></textarea><small class="field-error" id="messageError"></small></div>
+      <button class="btn btn-primary btn-full" type="submit">Kirim pesan <span>→</span></button>
+      <p class="form-success hidden" id="formSuccess" role="status">🎉 Pesan berhasil divalidasi! Ini hanya simulasi, belum dikirim ke server.</p>
+    </form>
+  </section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span> StudyMate<span class="brand-dot">.</span></a><p>Belajar bareng, tumbuh bareng. © <span class="year"></span> StudyMate</p></div></footer>
+</body>
+</html>

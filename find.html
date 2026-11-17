@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cari partner belajar berdasarkan mata pelajaran.">
+  <title>Cari Partner — StudyMate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><nav class="nav container">
+  <a class="brand" href="index.html"><span class="brand-mark">S</span> StudyMate<span class="brand-dot">.</span></a>
+  <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <div class="nav-links"><a href="index.html">Beranda</a><a class="active" href="find.html">Cari Partner</a><a href="dashboard.html">Dashboard</a><a href="about.html">Tentang</a><a href="contact.html">Kontak</a></div>
+  <button class="theme-toggle" type="button" aria-label="Ganti tema">☾</button>
+</nav></header>
+<main class="container page-main">
+  <section class="page-intro"><span class="eyebrow">STUDY BUDDIES</span><h1>Temukan teman <span class="gradient-text">belajarmu.</span></h1><p>Pilih teman belajar yang cocok dengan mata pelajaran dan gaya belajarmu.</p></section>
+  <section class="search-panel">
+    <label class="search-box"><span>⌕</span><input id="partnerSearch" type="search" placeholder="Cari nama atau mata pelajaran..." aria-label="Cari partner"></label>
+    <label class="select-wrap"><span class="sr-only">Filter mata pelajaran</span><select id="subjectFilter"><option value="all">Semua mata pelajaran</option><option>Matematika</option><option>Bahasa Inggris</option><option>Fisika</option><option>Biologi</option><option>Sejarah</option><option>Informatika</option></select></label>
+  </section>
+  <div class="results-line"><p id="resultCount">Menampilkan semua partner</p><span class="saved-count">♡ Tersimpan: <b id="savedCount">0</b></span></div>
+  <section id="partnerGrid" class="partner-grid" aria-live="polite"></section>
+  <div id="emptyState" class="empty-state hidden"><div>🧐</div><h3>Partner belum ditemukan</h3><p>Coba kata kunci atau filter mata pelajaran lainnya.</p><button class="btn btn-soft" id="resetSearch">Reset pencarian</button></div>
+  <p class="demo-note">* Profil di halaman ini merupakan data contoh untuk demonstrasi proyek.</p>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span> StudyMate<span class="brand-dot">.</span></a><p>Belajar bareng, tumbuh bareng. © <span class="year"></span> StudyMate</p></div></footer>
+</body>
+</html>
